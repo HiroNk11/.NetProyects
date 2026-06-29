@@ -7,6 +7,7 @@ Repositorio de practica con ejercicios de programacion en C# usando .NET Framewo
 ```text
 Consola/
   01-CalculadoraBasica/
+  02-ConversorTemperatura/
 WindowsForms/
 ```
 
@@ -25,6 +26,7 @@ Practicar de forma progresiva:
 ## Ejercicios de consola
 
 1. Calculadora basica
+2. Conversor de temperatura
 
 ## Como ejecutar
 
