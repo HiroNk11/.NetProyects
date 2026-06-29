@@ -11,6 +11,7 @@ Consola/
   03-AdivinarNumero/
   04-GestorTareas/
   05-SistemaAlumnos/
+  06-AgendaContactos/
 WindowsForms/
 ```
 
@@ -33,6 +34,7 @@ Practicar de forma progresiva:
 3. Juego de adivinar numero
 4. Gestor de tareas
 5. Sistema de alumnos
+6. Agenda de contactos
 
 ## Como ejecutar
 
