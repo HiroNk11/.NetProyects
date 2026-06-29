@@ -8,6 +8,7 @@ Repositorio de practica con ejercicios de programacion en C# usando .NET Framewo
 Consola/
   01-CalculadoraBasica/
   02-ConversorTemperatura/
+  03-AdivinarNumero/
 WindowsForms/
 ```
 
@@ -27,6 +28,7 @@ Practicar de forma progresiva:
 
 1. Calculadora basica
 2. Conversor de temperatura
+3. Juego de adivinar numero
 
 ## Como ejecutar
 
