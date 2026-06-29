@@ -14,6 +14,7 @@ Consola/
   06-AgendaContactos/
   07-AgendaContactosCsv/
   08-GestorProductos/
+  09-CajeroAutomatico/
 WindowsForms/
 ```
 
@@ -39,6 +40,7 @@ Practicar de forma progresiva:
 6. Agenda de contactos
 7. Agenda de contactos con CSV
 8. Gestor de productos
+9. Cajero automatico
 
 ## Como ejecutar
 
