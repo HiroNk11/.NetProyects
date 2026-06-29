@@ -13,6 +13,7 @@ Consola/
   05-SistemaAlumnos/
   06-AgendaContactos/
   07-AgendaContactosCsv/
+  08-GestorProductos/
 WindowsForms/
 ```
 
@@ -37,6 +38,7 @@ Practicar de forma progresiva:
 5. Sistema de alumnos
 6. Agenda de contactos
 7. Agenda de contactos con CSV
+8. Gestor de productos
 
 ## Como ejecutar
 
