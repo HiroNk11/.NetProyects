@@ -10,6 +10,7 @@ Consola/
   02-ConversorTemperatura/
   03-AdivinarNumero/
   04-GestorTareas/
+  05-SistemaAlumnos/
 WindowsForms/
 ```
 
@@ -31,6 +32,7 @@ Practicar de forma progresiva:
 2. Conversor de temperatura
 3. Juego de adivinar numero
 4. Gestor de tareas
+5. Sistema de alumnos
 
 ## Como ejecutar
 
