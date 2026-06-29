@@ -12,6 +12,7 @@ Consola/
   04-GestorTareas/
   05-SistemaAlumnos/
   06-AgendaContactos/
+  07-AgendaContactosCsv/
 WindowsForms/
 ```
 
@@ -35,6 +36,7 @@ Practicar de forma progresiva:
 4. Gestor de tareas
 5. Sistema de alumnos
 6. Agenda de contactos
+7. Agenda de contactos con CSV
 
 ## Como ejecutar
 
