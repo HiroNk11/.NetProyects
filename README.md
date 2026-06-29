@@ -9,6 +9,7 @@ Consola/
   01-CalculadoraBasica/
   02-ConversorTemperatura/
   03-AdivinarNumero/
+  04-GestorTareas/
 WindowsForms/
 ```
 
@@ -29,6 +30,7 @@ Practicar de forma progresiva:
 1. Calculadora basica
 2. Conversor de temperatura
 3. Juego de adivinar numero
+4. Gestor de tareas
 
 ## Como ejecutar
 
