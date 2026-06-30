@@ -16,6 +16,15 @@ Consola/
   08-GestorProductos/
   09-CajeroAutomatico/
 WindowsForms/
+  01-CalculadoraVisual/
+SOLID/
+  01-NotificadorPedidos/
+PatronesDiseno/
+  01-Strategy-Descuentos/
+SqlServer/
+  01-AgendaContactosSqlServer/
+MVC/
+  01-GestorTareasMvc/
 ```
 
 ## Objetivo
@@ -29,6 +38,10 @@ Practicar de forma progresiva:
 - Programacion orientada a objetos
 - Manejo de archivos
 - Aplicaciones Windows Forms
+- Principios SOLID
+- Patrones de diseno
+- Conexion con SQL Server
+- Modelo MVC
 
 ## Ejercicios de consola
 
@@ -41,6 +54,32 @@ Practicar de forma progresiva:
 7. Agenda de contactos con CSV
 8. Gestor de productos
 9. Cajero automatico
+
+## Aplicaciones Windows Forms
+
+1. Calculadora visual
+
+## Principios SOLID
+
+1. Notificador de pedidos
+
+## Patrones de diseno
+
+1. Strategy - Descuentos
+
+## SQL Server
+
+1. Agenda de contactos con SQL Server
+
+## MVC
+
+1. Gestor de tareas MVC
+
+## Proximos temas sugeridos
+
+- Patrones de diseno como Factory, Repository y Observer
+- Aplicaciones Windows Forms conectadas a SQL Server
+- Aplicaciones web con ASP.NET MVC
 
 ## Como ejecutar
 
