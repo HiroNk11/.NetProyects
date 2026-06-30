@@ -1,0 +1,9 @@
+ProductoId,Nombre,Categoria,Costo,Precio
+1,Notebook Pro 14,Tecnologia,720000.00,980000.00
+2,Monitor 24,Tecnologia,145000.00,210000.00
+3,Silla ergonomica,Oficina,98000.00,155000.00
+4,Escritorio compacto,Oficina,87000.00,132000.00
+5,Auriculares bluetooth,Accesorios,27000.00,48000.00
+6,Teclado mecanico,Accesorios,42000.00,76000.00
+7,Impresora laser,Tecnologia,160000.00,235000.00
+8,Lampara escritorio,Oficina,18000.00,35000.00

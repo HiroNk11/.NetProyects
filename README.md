@@ -25,6 +25,8 @@ SqlServer/
   01-AgendaContactosSqlServer/
 MVC/
   01-GestorTareasMvc/
+Datos/
+  01-DashboardVentasPowerBI/
 ```
 
 ## Objetivo
@@ -42,6 +44,7 @@ Practicar de forma progresiva:
 - Patrones de diseno
 - Conexion con SQL Server
 - Modelo MVC
+- Analisis de datos con Power BI
 
 ## Ejercicios de consola
 
@@ -75,11 +78,16 @@ Practicar de forma progresiva:
 
 1. Gestor de tareas MVC
 
+## Datos y Power BI
+
+1. Dashboard de ventas para Power BI
+
 ## Proximos temas sugeridos
 
 - Patrones de diseno como Factory, Repository y Observer
 - Aplicaciones Windows Forms conectadas a SQL Server
 - Aplicaciones web con ASP.NET MVC
+- Dashboards con metricas comerciales y modelos estrella
 
 ## Como ejecutar
 
