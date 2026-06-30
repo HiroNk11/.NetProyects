@@ -19,8 +19,10 @@ WindowsForms/
   01-CalculadoraVisual/
 SOLID/
   01-NotificadorPedidos/
+  02-GeneradorReportes/
 PatronesDiseno/
   01-Strategy-Descuentos/
+  02-Factory-MetodosPago/
 SqlServer/
   01-AgendaContactosSqlServer/
 MVC/
@@ -65,10 +67,12 @@ Practicar de forma progresiva:
 ## Principios SOLID
 
 1. Notificador de pedidos
+2. Generador de reportes
 
 ## Patrones de diseno
 
 1. Strategy - Descuentos
+2. Factory - Metodos de pago
 
 ## SQL Server
 
