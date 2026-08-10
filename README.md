@@ -18,6 +18,8 @@ Consola/
   10-SistemaBiblioteca/
   11-RegistroVentas/
   12-ReservasHotel/
+  13-ControlGastos/
+  14-SistemaTurnos/
 WindowsForms/
   01-CalculadoraVisual/
   02-GestorTareasWinForms/
@@ -67,6 +69,8 @@ Practicar de forma progresiva:
 10. Sistema de biblioteca
 11. Registro de ventas
 12. Sistema de reservas de hotel
+13. Control de gastos personales
+14. Sistema de turnos
 
 ## Aplicaciones Windows Forms
 
