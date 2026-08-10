@@ -17,6 +17,7 @@ Consola/
   09-CajeroAutomatico/
   10-SistemaBiblioteca/
   11-RegistroVentas/
+  12-ReservasHotel/
 WindowsForms/
   01-CalculadoraVisual/
   02-GestorTareasWinForms/
@@ -65,6 +66,7 @@ Practicar de forma progresiva:
 9. Cajero automatico
 10. Sistema de biblioteca
 11. Registro de ventas
+12. Sistema de reservas de hotel
 
 ## Aplicaciones Windows Forms
 
