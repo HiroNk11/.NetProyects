@@ -16,6 +16,7 @@ Consola/
   08-GestorProductos/
   09-CajeroAutomatico/
   10-SistemaBiblioteca/
+  11-RegistroVentas/
 WindowsForms/
   01-CalculadoraVisual/
   02-GestorTareasWinForms/
@@ -63,6 +64,7 @@ Practicar de forma progresiva:
 8. Gestor de productos
 9. Cajero automatico
 10. Sistema de biblioteca
+11. Registro de ventas
 
 ## Aplicaciones Windows Forms
 
