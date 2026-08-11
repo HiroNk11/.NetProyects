@@ -38,6 +38,7 @@ PatronesDiseno/
   03-Repository-Productos/
 SqlServer/
   01-AgendaContactosSqlServer/
+  02-PedidosSqlServer/
 MVC/
   01-GestorTareasMvc/
 Datos/
@@ -65,6 +66,7 @@ Practicar de forma progresiva:
 - Arquitectura por capas
 - Patrones de diseno
 - Conexion con SQL Server
+- Scripts SQL con tablas, procedimientos y triggers
 - Preparacion para Entity Framework
 - APIs REST con endpoints
 - Modelo MVC
@@ -122,6 +124,7 @@ Practicar de forma progresiva:
 ## SQL Server
 
 1. Agenda de contactos con SQL Server
+2. Base de pedidos con tablas, procedimientos almacenados y triggers
 
 ## MVC
 
