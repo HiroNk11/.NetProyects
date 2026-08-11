@@ -27,6 +27,7 @@ WindowsForms/
   02-GestorTareasWinForms/
   03-AgendaContactosWinFormsMvc/
   04-GestorProductosWinFormsSolid/
+  05-SistemaVentasWinFormsMvc/
 SOLID/
   01-NotificadorPedidos/
   02-GeneradorReportes/
@@ -86,6 +87,7 @@ Practicar de forma progresiva:
 2. Gestor de tareas Windows Forms
 3. Agenda de contactos Windows Forms con MVC
 4. Gestor de productos Windows Forms con SOLID
+5. Sistema de ventas Windows Forms con MVC
 
 ## Principios SOLID
 
