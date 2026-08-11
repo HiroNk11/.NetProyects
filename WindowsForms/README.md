@@ -6,9 +6,10 @@ Aplicaciones de escritorio con interfaz grafica usando Windows Forms.
 
 1. `01-CalculadoraVisual` - Calculadora con formulario, botones y validaciones.
 2. `02-GestorTareasWinForms` - CRUD visual de tareas en memoria.
+3. `03-AgendaContactosWinFormsMvc` - Agenda con MVC, repositorio y validaciones.
+4. `04-GestorProductosWinFormsSolid` - Productos con servicios, repositorio e interfaces.
 
 ## Proximos proyectos sugeridos
 
-3. `03-AgendaContactosWinForms` - Agenda con busqueda y edicion.
-4. `04-GestorProductosWinForms` - Productos, stock y filtros.
 5. `05-SistemaVentasWinForms` - Clientes, productos y ventas.
+6. `06-ProductosWinFormsEntityFramework` - CRUD conectado a base de datos con Entity Framework.

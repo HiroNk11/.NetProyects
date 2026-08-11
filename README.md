@@ -25,6 +25,8 @@ Consola/
 WindowsForms/
   01-CalculadoraVisual/
   02-GestorTareasWinForms/
+  03-AgendaContactosWinFormsMvc/
+  04-GestorProductosWinFormsSolid/
 SOLID/
   01-NotificadorPedidos/
   02-GeneradorReportes/
@@ -52,8 +54,10 @@ Practicar de forma progresiva:
 - Manejo de archivos
 - Aplicaciones Windows Forms
 - Principios SOLID
+- Arquitectura por capas
 - Patrones de diseno
 - Conexion con SQL Server
+- Preparacion para Entity Framework
 - Modelo MVC
 - Analisis de datos con Power BI
 
@@ -80,6 +84,8 @@ Practicar de forma progresiva:
 
 1. Calculadora visual
 2. Gestor de tareas Windows Forms
+3. Agenda de contactos Windows Forms con MVC
+4. Gestor de productos Windows Forms con SOLID
 
 ## Principios SOLID
 
