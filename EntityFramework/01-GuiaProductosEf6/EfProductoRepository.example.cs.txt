@@ -1,0 +1,61 @@
+using System.Collections.Generic;
+using System.Linq;
+using ProductosWinFormsEfReady.Data;
+using ProductosWinFormsEfReady.Models;
+using ProductosWinFormsEfReady.Repositories;
+
+namespace ProductosWinFormsEfReady.Repositories
+{
+    internal class EfProductoRepository : IProductoRepository
+    {
+        public List<Producto> ObtenerTodos()
+        {
+            using (ProductoDbContext context = new ProductoDbContext())
+            {
+                return context.Productos.ToList();
+            }
+        }
+
+        public void Guardar(Producto producto)
+        {
+            using (ProductoDbContext context = new ProductoDbContext())
+            {
+                if (producto.Id == 0)
+                {
+                    context.Productos.Add(producto);
+                }
+                else
+                {
+                    Producto existente = context.Productos.Find(producto.Id);
+
+                    if (existente == null)
+                    {
+                        return;
+                    }
+
+                    existente.Nombre = producto.Nombre;
+                    existente.Precio = producto.Precio;
+                    existente.Activo = producto.Activo;
+                }
+
+                context.SaveChanges();
+            }
+        }
+
+        public void Eliminar(int id)
+        {
+            using (ProductoDbContext context = new ProductoDbContext())
+            {
+                Producto producto = context.Productos.Find(id);
+
+                if (producto == null)
+                {
+                    return;
+                }
+
+                context.Productos.Remove(producto);
+                context.SaveChanges();
+            }
+        }
+    }
+}

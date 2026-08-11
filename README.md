@@ -28,6 +28,7 @@ WindowsForms/
   03-AgendaContactosWinFormsMvc/
   04-GestorProductosWinFormsSolid/
   05-SistemaVentasWinFormsMvc/
+  06-ProductosWinFormsEfReady/
 SOLID/
   01-NotificadorPedidos/
   02-GeneradorReportes/
@@ -41,6 +42,8 @@ MVC/
   01-GestorTareasMvc/
 Datos/
   01-DashboardVentasPowerBI/
+EntityFramework/
+  01-GuiaProductosEf6/
 ```
 
 ## Objetivo
@@ -88,6 +91,11 @@ Practicar de forma progresiva:
 3. Agenda de contactos Windows Forms con MVC
 4. Gestor de productos Windows Forms con SOLID
 5. Sistema de ventas Windows Forms con MVC
+6. Productos Windows Forms preparado para Entity Framework
+
+## Entity Framework
+
+1. Guia para migrar productos a EF6
 
 ## Principios SOLID
 

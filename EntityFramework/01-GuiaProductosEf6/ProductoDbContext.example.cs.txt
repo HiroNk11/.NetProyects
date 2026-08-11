@@ -1,0 +1,15 @@
+using System.Data.Entity;
+using ProductosWinFormsEfReady.Models;
+
+namespace ProductosWinFormsEfReady.Data
+{
+    internal class ProductoDbContext : DbContext
+    {
+        public ProductoDbContext()
+            : base("name=ProductosDb")
+        {
+        }
+
+        public DbSet<Producto> Productos { get; set; }
+    }
+}
