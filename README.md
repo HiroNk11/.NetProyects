@@ -44,6 +44,8 @@ Datos/
   01-DashboardVentasPowerBI/
 EntityFramework/
   01-GuiaProductosEf6/
+WebApi/
+  01-ProductosApiMvcEf6/
 ```
 
 ## Objetivo
@@ -62,6 +64,7 @@ Practicar de forma progresiva:
 - Patrones de diseno
 - Conexion con SQL Server
 - Preparacion para Entity Framework
+- APIs REST con endpoints
 - Modelo MVC
 - Analisis de datos con Power BI
 
@@ -96,6 +99,10 @@ Practicar de forma progresiva:
 ## Entity Framework
 
 1. Guia para migrar productos a EF6
+
+## Web API
+
+1. Productos API con MVC y Entity Framework 6
 
 ## Principios SOLID
 
