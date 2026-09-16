@@ -62,6 +62,16 @@ WebApi/
   02-PedidosApiMvcEf6/
   03-TurnosApiMvcEf6/
   04-BibliotecaApiMvcEf6/
+Herramientas/
+  01-LoggerArchivos/
+  02-ConfiguracionAppConfig/
+  03-SerializacionJsonXml/
+Pruebas/
+  01-PruebasUnitariasBasicas/
+scripts/
+  build-all.ps1
+.github/workflows/
+  dotnet-framework-build.yml
 ```
 
 ## Objetivo
@@ -86,6 +96,9 @@ Practicar de forma progresiva:
 - APIs REST con endpoints
 - Modelo MVC
 - Analisis de datos con Power BI
+- Logging, configuracion y serializacion
+- Pruebas automatizadas basicas
+- Integracion continua con GitHub Actions
 
 ## Ejercicios de consola
 
@@ -163,6 +176,21 @@ Practicar de forma progresiva:
 ## Datos y Power BI
 
 1. Dashboard de ventas para Power BI
+
+## Herramientas
+
+1. Logger de consola y archivos
+2. Configuracion con App.config
+3. Serializacion JSON y XML
+4. Workflow de build con GitHub Actions
+
+## Pruebas
+
+1. Pruebas unitarias basicas sin paquetes externos
+
+## Scripts
+
+1. `scripts/build-all.ps1` compila todos los proyectos SDK-style del repositorio.
 
 ## Proximos temas sugeridos
 

@@ -1,0 +1,31 @@
+name: Build .NET Framework projects
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Build SDK-style projects
+        shell: pwsh
+        run: |
+          $projects = Get-ChildItem -Recurse -Filter *.csproj | Sort-Object FullName
+          foreach ($project in $projects) {
+            Write-Host "Building $($project.FullName)"
+            dotnet build $project.FullName --configuration Release
+          }
