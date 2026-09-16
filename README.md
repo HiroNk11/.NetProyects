@@ -32,10 +32,13 @@ WindowsForms/
 SOLID/
   01-NotificadorPedidos/
   02-GeneradorReportes/
+Arquitectura/
+  01-InventarioCleanArchitecture/
 PatronesDiseno/
   01-Strategy-Descuentos/
   02-Factory-MetodosPago/
   03-Repository-Productos/
+  04-Observer-AlertasStock/
 SqlServer/
   01-AgendaContactosSqlServer/
   02-PedidosSqlServer/
@@ -65,6 +68,7 @@ Practicar de forma progresiva:
 - Aplicaciones Windows Forms
 - Principios SOLID
 - Arquitectura por capas
+- Clean Architecture aplicada a consola
 - Patrones de diseno
 - Conexion con SQL Server
 - Scripts SQL con tablas, procedimientos y triggers
@@ -117,11 +121,16 @@ Practicar de forma progresiva:
 1. Notificador de pedidos
 2. Generador de reportes
 
+## Arquitectura
+
+1. Inventario con Clean Architecture
+
 ## Patrones de diseno
 
 1. Strategy - Descuentos
 2. Factory - Metodos de pago
 3. Repository - Productos
+4. Observer - Alertas de stock
 
 ## SQL Server
 
@@ -138,7 +147,7 @@ Practicar de forma progresiva:
 
 ## Proximos temas sugeridos
 
-- Patrones de diseno como Observer, Adapter y Command
+- Patrones de diseno como Adapter y Command
 - Aplicaciones Windows Forms conectadas a SQL Server
 - Aplicaciones web con ASP.NET MVC
 - Dashboards con metricas comerciales y modelos estrella
