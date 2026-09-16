@@ -49,6 +49,7 @@ WebApi/
   01-ProductosApiMvcEf6/
   02-PedidosApiMvcEf6/
   03-TurnosApiMvcEf6/
+  04-BibliotecaApiMvcEf6/
 ```
 
 ## Objetivo
@@ -109,6 +110,7 @@ Practicar de forma progresiva:
 1. Productos API con MVC y Entity Framework 6
 2. Pedidos API con relaciones, MVC y Entity Framework 6
 3. Turnos API con disponibilidad, MVC y Entity Framework 6
+4. Biblioteca API con prestamos, MVC y Entity Framework 6
 
 ## Principios SOLID
 
