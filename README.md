@@ -34,11 +34,14 @@ SOLID/
   02-GeneradorReportes/
 Arquitectura/
   01-InventarioCleanArchitecture/
+  02-ReservasSalasCleanArchitecture/
 PatronesDiseno/
   01-Strategy-Descuentos/
   02-Factory-MetodosPago/
   03-Repository-Productos/
   04-Observer-AlertasStock/
+  05-Adapter-Exportacion/
+  06-Command-Operaciones/
 SqlServer/
   01-AgendaContactosSqlServer/
   02-PedidosSqlServer/
@@ -124,6 +127,7 @@ Practicar de forma progresiva:
 ## Arquitectura
 
 1. Inventario con Clean Architecture
+2. Reservas de salas con Clean Architecture
 
 ## Patrones de diseno
 
@@ -131,6 +135,8 @@ Practicar de forma progresiva:
 2. Factory - Metodos de pago
 3. Repository - Productos
 4. Observer - Alertas de stock
+5. Adapter - Exportacion de reportes
+6. Command - Operaciones bancarias
 
 ## SQL Server
 
@@ -147,7 +153,7 @@ Practicar de forma progresiva:
 
 ## Proximos temas sugeridos
 
-- Patrones de diseno como Adapter y Command
+- Patrones de diseno como Decorator, Mediator y Chain of Responsibility
 - Aplicaciones Windows Forms conectadas a SQL Server
 - Aplicaciones web con ASP.NET MVC
 - Dashboards con metricas comerciales y modelos estrella

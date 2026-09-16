@@ -8,8 +8,10 @@ Ejemplos simples de patrones de diseno aplicados a funcionalidades concretas.
 2. `02-Factory-MetodosPago` - Crear distintos metodos de pago desde una opcion del usuario.
 3. `03-Repository-Productos` - Separar reglas de negocio del almacenamiento de productos.
 4. `04-Observer-AlertasStock` - Notificar alertas de stock bajo sin acoplar la entidad a cada canal.
+5. `05-Adapter-Exportacion` - Adaptar exportadores externos a una interfaz propia.
+6. `06-Command-Operaciones` - Encapsular operaciones bancarias con historial y deshacer.
 
 ## Proximos patrones sugeridos
 
-5. `05-Adapter-Exportacion`
-6. `06-Command-Operaciones`
+7. `07-Decorator-Notificaciones`
+8. `08-Mediator-Chat`

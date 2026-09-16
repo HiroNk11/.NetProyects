@@ -5,6 +5,7 @@ Proyectos pensados para mostrar organizacion de codigo, separacion de responsabi
 ## Proyectos
 
 1. `01-InventarioCleanArchitecture` - Inventario por capas con dominio, aplicacion, infraestructura y presentacion.
+2. `02-ReservasSalasCleanArchitecture` - Reservas de salas con validacion de horarios y reglas de superposicion.
 
 ## Conceptos practicados
 
@@ -14,3 +15,4 @@ Proyectos pensados para mostrar organizacion de codigo, separacion de responsabi
 - Servicios de aplicacion
 - Validaciones de dominio
 - Reportes simples para consola
+- Reglas de negocio testeables fuera de la interfaz
