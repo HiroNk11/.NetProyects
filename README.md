@@ -22,6 +22,7 @@ Consola/
   14-SistemaTurnos/
   15-SistemaFacturacion/
   16-BancoMultiplesCuentas/
+  17-ReportesVentasLinq/
 WindowsForms/
   01-CalculadoraVisual/
   02-GestorTareasWinForms/
@@ -32,9 +33,11 @@ WindowsForms/
 SOLID/
   01-NotificadorPedidos/
   02-GeneradorReportes/
+  03-ProcesadorPagosSolid/
 Arquitectura/
   01-InventarioCleanArchitecture/
   02-ReservasSalasCleanArchitecture/
+  03-TicketsSoporteCleanArchitecture/
 PatronesDiseno/
   01-Strategy-Descuentos/
   02-Factory-MetodosPago/
@@ -42,6 +45,9 @@ PatronesDiseno/
   04-Observer-AlertasStock/
   05-Adapter-Exportacion/
   06-Command-Operaciones/
+  07-Decorator-Notificaciones/
+  08-Mediator-Chat/
+  09-ChainOfResponsibility-Aprobaciones/
 SqlServer/
   01-AgendaContactosSqlServer/
   02-PedidosSqlServer/
@@ -68,6 +74,7 @@ Practicar de forma progresiva:
 - Validaciones
 - Programacion orientada a objetos
 - Manejo de archivos
+- Consultas con LINQ
 - Aplicaciones Windows Forms
 - Principios SOLID
 - Arquitectura por capas
@@ -98,6 +105,7 @@ Practicar de forma progresiva:
 14. Sistema de turnos
 15. Sistema de facturacion
 16. Banco con multiples cuentas
+17. Reportes de ventas con LINQ
 
 ## Aplicaciones Windows Forms
 
@@ -123,11 +131,13 @@ Practicar de forma progresiva:
 
 1. Notificador de pedidos
 2. Generador de reportes
+3. Procesador de pagos SOLID
 
 ## Arquitectura
 
 1. Inventario con Clean Architecture
 2. Reservas de salas con Clean Architecture
+3. Tickets de soporte con Clean Architecture
 
 ## Patrones de diseno
 
@@ -137,6 +147,9 @@ Practicar de forma progresiva:
 4. Observer - Alertas de stock
 5. Adapter - Exportacion de reportes
 6. Command - Operaciones bancarias
+7. Decorator - Notificaciones
+8. Mediator - Chat interno
+9. Chain of Responsibility - Aprobaciones de gastos
 
 ## SQL Server
 
@@ -153,7 +166,7 @@ Practicar de forma progresiva:
 
 ## Proximos temas sugeridos
 
-- Patrones de diseno como Decorator, Mediator y Chain of Responsibility
+- Patrones de diseno como Facade, Proxy y Template Method
 - Aplicaciones Windows Forms conectadas a SQL Server
 - Aplicaciones web con ASP.NET MVC
 - Dashboards con metricas comerciales y modelos estrella

@@ -6,6 +6,7 @@ Proyectos pensados para mostrar buenas practicas de diseno orientado a objetos.
 
 1. `01-NotificadorPedidos` - Inversion de dependencias usando una interfaz `INotificador`.
 2. `02-GeneradorReportes` - Separacion de responsabilidades para generar y exportar reportes.
+3. `03-ProcesadorPagosSolid` - Checkout desacoplado de los distintos medios de pago.
 
 ## Principios trabajados
 
