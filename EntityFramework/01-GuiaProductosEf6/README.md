@@ -1,4 +1,4 @@
-# 01 - Guia Productos EF6
+# Guia Productos EF6
 
 Guia para convertir el proyecto `WindowsForms/06-ProductosWinFormsEfReady` a una version con Entity Framework 6 y SQL Server.
 
@@ -6,7 +6,7 @@ Guia para convertir el proyecto `WindowsForms/06-ProductosWinFormsEfReady` a una
 
 Reemplazar `InMemoryProductoRepository` por un repositorio que use `DbContext`.
 
-## Pasos sugeridos
+## Plan de integracion pendiente
 
 1. Instalar el paquete NuGet `EntityFramework`.
 2. Crear una cadena de conexion en `App.config`.

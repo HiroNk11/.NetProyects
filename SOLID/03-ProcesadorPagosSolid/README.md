@@ -1,4 +1,6 @@
-# 03 - Procesador Pagos SOLID
+# Procesador Pagos SOLID
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola que procesa pagos usando interfaces y servicios pequenos.
 

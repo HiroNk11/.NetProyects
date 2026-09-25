@@ -1,4 +1,6 @@
-# 11 - Registro de ventas
+# Registro de ventas
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para registrar ventas con varios productos y calcular totales.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# para registrar ventas con varios productos y calcula
 - Ver detalle de una venta
 - Calcular total vendido
 
-## Conceptos practicados
+## Implementacion
 
 - Clases relacionadas
 - `List<T>`
@@ -23,10 +25,8 @@ Aplicacion de consola en C# para registrar ventas con varios productos y calcula
 - `FirstOrDefault`
 - Validaciones
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de consola que permita registrar ventas, cargar productos vendidos y consultar totales.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar descuento por venta o guardar las ventas en un archivo CSV.

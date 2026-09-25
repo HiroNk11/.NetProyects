@@ -1,6 +1,6 @@
 # Arquitectura
 
-Proyectos pensados para mostrar organizacion de codigo, separacion de responsabilidades y buenas practicas utiles para portfolio.
+Proyectos de prueba con arquitectura por capas, separacion de responsabilidades y reglas de negocio independientes de la presentacion.
 
 ## Proyectos
 
@@ -8,7 +8,7 @@ Proyectos pensados para mostrar organizacion de codigo, separacion de responsabi
 2. `02-ReservasSalasCleanArchitecture` - Reservas de salas con validacion de horarios y reglas de superposicion.
 3. `03-TicketsSoporteCleanArchitecture` - Mesa de ayuda con estados, prioridades y asignacion de tecnicos.
 
-## Conceptos practicados
+## Implementacion
 
 - Separacion por capas
 - Inversion de dependencias

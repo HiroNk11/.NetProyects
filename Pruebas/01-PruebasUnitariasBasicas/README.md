@@ -1,6 +1,8 @@
-# 01 - Pruebas Unitarias Basicas
+# Pruebas Unitarias Basicas
 
-Mini proyecto para entender como se estructura una prueba sin depender todavia de MSTest, NUnit o xUnit.
+Proyecto de prueba en evolucion.
+
+Ejecutor de pruebas de consola para verificar operaciones de calculo mediante aserciones, sin dependencias de frameworks externos.
 
 ## Funcionalidades probadas
 
@@ -11,4 +13,10 @@ Mini proyecto para entender como se estructura una prueba sin depender todavia d
 
 ## Nota
 
-En un proyecto profesional conviene usar un framework de testing real. Este ejemplo sirve para entender la idea antes de incorporar paquetes externos.
+El ejecutor actual utiliza comprobaciones propias y no integra MSTest, NUnit ni xUnit.
+
+## Evolucion del proyecto
+
+Propuesta pendiente para una proxima version:
+
+Migrar los casos a MSTest, NUnit o xUnit e incorporar reportes de resultados y cobertura.

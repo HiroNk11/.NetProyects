@@ -1,4 +1,6 @@
-# 03 - Tickets Soporte Clean Architecture
+# Tickets Soporte Clean Architecture
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola para gestionar tickets de soporte con estados y prioridades.
 

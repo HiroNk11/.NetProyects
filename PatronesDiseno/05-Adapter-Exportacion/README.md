@@ -1,8 +1,10 @@
-# 05 - Adapter Exportacion
+# Adapter Exportacion
 
-Ejemplo del patron Adapter aplicado a exportacion de reportes.
+Proyecto de prueba en evolucion.
 
-## Idea
+Prototipo con el patron Adapter aplicado a exportacion de reportes.
+
+## Diseno
 
 La aplicacion trabaja con una interfaz propia (`IExportadorReporte`), aunque por dentro use clases externas con metodos diferentes.
 

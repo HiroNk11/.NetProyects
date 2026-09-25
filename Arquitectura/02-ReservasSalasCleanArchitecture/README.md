@@ -1,4 +1,6 @@
-# 02 - Reservas Salas Clean Architecture
+# Reservas Salas Clean Architecture
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola para reservar salas de reunion evitando superposiciones de horarios.
 

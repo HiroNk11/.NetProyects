@@ -1,4 +1,6 @@
-# 03 - Turnos API MVC EF6
+# Turnos API MVC EF6
+
+Proyecto de prueba en evolucion.
 
 API REST de turnos usando ASP.NET Web API 2, .NET Framework 4.8, Entity Framework 6 y SQL Server LocalDB.
 

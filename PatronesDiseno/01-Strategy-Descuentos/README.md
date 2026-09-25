@@ -1,4 +1,6 @@
-# 01 - Strategy - Descuentos
+# Strategy - Descuentos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que calcula el total de una compra usando distintas estrategias de descuento.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# que calcula el total de una compra usando distintas 
 - Calcular descuento para cliente frecuente
 - Mostrar subtotal, descuento aplicado y total final
 
-## Conceptos practicados
+## Implementacion
 
 - Patron Strategy
 - Interfaces
@@ -21,10 +23,8 @@ Aplicacion de consola en C# que calcula el total de una compra usando distintas 
 - Factory simple para seleccionar estrategias
 - Uso de `decimal` para importes
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una calculadora de descuentos que pueda cambiar la forma de calcular el descuento sin modificar la clase principal.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar una estrategia para promociones de temporada o cupones de descuento.

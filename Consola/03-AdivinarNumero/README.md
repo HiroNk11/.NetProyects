@@ -1,4 +1,6 @@
-# 03 - Adivinar numero
+# Adivinar numero
+
+Proyecto de prueba en evolucion.
 
 Juego de consola en C# donde el usuario debe adivinar un numero secreto generado aleatoriamente.
 
@@ -11,7 +13,7 @@ Juego de consola en C# donde el usuario debe adivinar un numero secreto generado
 - Validar que el numero este dentro del rango permitido
 - Permitir jugar otra partida
 
-## Conceptos practicados
+## Implementacion
 
 - Clase `Random`
 - Constantes
@@ -21,10 +23,8 @@ Juego de consola en C# donde el usuario debe adivinar un numero secreto generado
 - Metodos
 - Validacion con `int.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un juego de consola en el que la computadora genere un numero secreto y el usuario intente adivinarlo. Despues de cada intento, el programa debe indicar si el numero secreto es mayor o menor.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar niveles de dificultad con diferentes rangos e intentos disponibles.

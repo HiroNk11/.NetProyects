@@ -1,4 +1,6 @@
-# 09 - Cajero automatico
+# Cajero automatico
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que simula operaciones basicas de un cajero automatico.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# que simula operaciones basicas de un cajero automati
 - Evitar extracciones con saldo insuficiente
 - Registrar historial de movimientos
 
-## Conceptos practicados
+## Implementacion
 
 - Clases y objetos
 - Encapsulamiento con `private set`
@@ -21,10 +23,8 @@ Aplicacion de consola en C# que simula operaciones basicas de un cajero automati
 - Reglas de negocio
 - Validaciones con `decimal.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un cajero automatico de consola que permita consultar saldo, depositar, extraer y visualizar los movimientos realizados.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar ingreso con PIN o guardar los movimientos en un archivo.

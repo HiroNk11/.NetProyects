@@ -1,6 +1,6 @@
-# Ejercicios C# - .NET Framework
+# Proyectos de prueba en C# y .NET Framework
 
-Repositorio de practica con ejercicios de programacion en C# usando .NET Framework.
+Coleccion de proyectos de prueba en C# y .NET Framework para explorar soluciones de consola, escritorio, APIs y persistencia de datos. Cada proyecto tiene un alcance concreto y puede evolucionar de forma independiente.
 
 ## Estructura
 
@@ -74,33 +74,19 @@ scripts/
   dotnet-framework-build.yml
 ```
 
-## Objetivo
+## Alcance tecnico
 
-Practicar de forma progresiva:
+Los proyectos incluyen gestion de datos, validaciones y reglas de negocio con distintas interfaces y estrategias de persistencia:
 
-- Sintaxis basica de C#
-- Condicionales y ciclos
-- Metodos
-- Validaciones
-- Programacion orientada a objetos
-- Manejo de archivos
-- Consultas con LINQ
-- Aplicaciones Windows Forms
-- Principios SOLID
-- Arquitectura por capas
-- Clean Architecture aplicada a consola
-- Patrones de diseno
-- Conexion con SQL Server
-- Scripts SQL con tablas, procedimientos y triggers
-- Preparacion para Entity Framework
-- APIs REST con endpoints
-- Modelo MVC
-- Analisis de datos con Power BI
-- Logging, configuracion y serializacion
-- Pruebas automatizadas basicas
-- Integracion continua con GitHub Actions
+- Aplicaciones de consola y Windows Forms.
+- Servicios, repositorios, MVC, SOLID y arquitectura por capas.
+- Archivos, LINQ, SQL Server y Entity Framework.
+- APIs REST, analisis con Power BI y herramientas de desarrollo.
+- Pruebas automatizadas y compilacion con GitHub Actions.
 
-## Ejercicios de consola
+Las funcionalidades actuales se describen en cada README. Las secciones de evolucion documentan propuestas pendientes y no implican que ya esten implementadas. Algunos proyectos usan datos de prueba o almacenamiento en memoria; la guia de Entity Framework describe una integracion pendiente.
+
+## Proyectos de consola
 
 1. Calculadora basica
 2. Conversor de temperatura
@@ -192,7 +178,9 @@ Practicar de forma progresiva:
 
 1. `scripts/build-all.ps1` compila todos los proyectos SDK-style del repositorio.
 
-## Proximos temas sugeridos
+## Evolucion del repositorio
+
+Lineas abiertas para ampliar los proyectos existentes y desarrollar nuevas variantes:
 
 - Patrones de diseno como Facade, Proxy y Template Method
 - Aplicaciones Windows Forms conectadas a SQL Server

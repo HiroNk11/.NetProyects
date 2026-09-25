@@ -1,4 +1,6 @@
-# 05 - Sistema de alumnos
+# Sistema de alumnos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar alumnos, cargar notas y calcular promedios.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# para administrar alumnos, cargar notas y calcular pr
 - Mostrar estado academico
 - Buscar alumnos por legajo
 
-## Conceptos practicados
+## Implementacion
 
 - Clases y objetos
 - Propiedades
@@ -23,10 +25,8 @@ Aplicacion de consola en C# para administrar alumnos, cargar notas y calcular pr
 - `Average`
 - Validaciones con `int.TryParse` y `double.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de consola que permita cargar alumnos, registrar sus notas y consultar su promedio y estado academico.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar busqueda por apellido o guardar los alumnos en un archivo.

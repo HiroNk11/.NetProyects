@@ -1,4 +1,6 @@
-# 15 - Sistema de facturacion
+# Sistema de facturacion
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para cargar clientes, productos y emitir facturas con IVA.
 
@@ -13,7 +15,7 @@ Aplicacion de consola en C# para cargar clientes, productos y emitir facturas co
 - Listado y detalle de facturas
 - Reporte de total facturado
 
-## Conceptos practicados
+## Implementacion
 
 - Composicion de objetos
 - Clases relacionadas
@@ -23,10 +25,8 @@ Aplicacion de consola en C# para cargar clientes, productos y emitir facturas co
 - Metodos de calculo
 - LINQ con `Sum` y `FirstOrDefault`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de facturacion que permita cargar clientes, productos y emitir facturas con detalle de items e impuestos.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar descuentos, distintos tipos de factura o persistencia en archivos.

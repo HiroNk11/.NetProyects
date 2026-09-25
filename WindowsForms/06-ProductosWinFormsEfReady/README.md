@@ -1,6 +1,8 @@
-# 06 - Productos WinForms EF Ready
+# Productos WinForms EF Ready
 
-Aplicacion Windows Forms chica para CRUD de productos, preparada para cambiar el repositorio en memoria por Entity Framework.
+Proyecto de prueba en evolucion.
+
+Aplicacion Windows Forms para CRUD de productos, preparada para cambiar el repositorio en memoria por Entity Framework.
 
 ## Funcionalidades
 

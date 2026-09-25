@@ -1,4 +1,6 @@
-# 04 - Gestor de productos WinForms SOLID
+# Gestor de productos WinForms SOLID
+
+Proyecto de prueba en evolucion.
 
 Aplicacion Windows Forms para administrar productos con separacion por capas.
 

@@ -1,4 +1,6 @@
-# 10 - Sistema de biblioteca
+# Sistema de biblioteca
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar libros y simular prestamos y devoluciones.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# para administrar libros y simular prestamos y devolu
 - Validar estados de prestamo
 - Validar datos ingresados por el usuario
 
-## Conceptos practicados
+## Implementacion
 
 - Clases y objetos
 - Encapsulamiento con `private set`
@@ -22,10 +24,8 @@ Aplicacion de consola en C# para administrar libros y simular prestamos y devolu
 - Validaciones
 - `DateTime`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de biblioteca que permita cargar libros, consultarlos, prestarlos y devolverlos desde un menu de consola.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar socios de biblioteca o guardar libros y prestamos en archivos CSV.

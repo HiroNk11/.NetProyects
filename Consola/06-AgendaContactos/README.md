@@ -1,4 +1,6 @@
-# 06 - Agenda de contactos
+# Agenda de contactos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar contactos usando una lista en memoria.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# para administrar contactos usando una lista en memor
 - Validar campos obligatorios
 - Validar email de forma simple
 
-## Conceptos practicados
+## Implementacion
 
 - Clases y objetos
 - `List<T>`
@@ -22,10 +24,8 @@ Aplicacion de consola en C# para administrar contactos usando una lista en memor
 - `IndexOf` con comparacion sin distinguir mayusculas
 - Validaciones
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una agenda de contactos que permita cargar, buscar, modificar y eliminar contactos desde un menu de consola.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Guardar los contactos en un archivo CSV para mantenerlos al cerrar el programa.

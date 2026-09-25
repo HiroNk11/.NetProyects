@@ -1,4 +1,6 @@
-# 13 - Control de gastos personales
+# Control de gastos personales
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para registrar gastos y obtener reportes simples.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# para registrar gastos y obtener reportes simples.
 - Eliminar gastos
 - Validar fechas e importes
 
-## Conceptos practicados
+## Implementacion
 
 - `DateTime`
 - `DateTime.TryParseExact`
@@ -22,10 +24,8 @@ Aplicacion de consola en C# para registrar gastos y obtener reportes simples.
 - `Sum`
 - Validaciones
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema que permita registrar gastos personales y consultar totales generales y por categoria.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar presupuesto mensual o guardar los gastos en un archivo CSV.

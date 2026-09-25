@@ -1,4 +1,6 @@
-# 03 - Agenda de contactos WinForms MVC
+# Agenda de contactos WinForms MVC
+
+Proyecto de prueba en evolucion.
 
 Aplicacion Windows Forms para administrar contactos aplicando separacion de responsabilidades.
 
@@ -19,6 +21,8 @@ Aplicacion Windows Forms para administrar contactos aplicando separacion de resp
 - Validador separado
 - Formulario enfocado en la interfaz grafica
 
-## Mejora opcional
+## Evolucion del proyecto
+
+Propuesta pendiente para una proxima version:
 
 Reemplazar el repositorio en memoria por un repositorio con Entity Framework.

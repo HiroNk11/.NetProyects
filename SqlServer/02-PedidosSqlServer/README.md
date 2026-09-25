@@ -1,4 +1,6 @@
-# 02 - Pedidos SQL Server
+# Pedidos SQL Server
+
+Proyecto de prueba en evolucion.
 
 Scripts SQL para crear una base de datos de pedidos con clientes, productos, pedidos, items y auditoria.
 

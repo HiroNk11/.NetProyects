@@ -1,8 +1,10 @@
-# 08 - Mediator Chat
+# Mediator Chat
 
-Ejemplo del patron Mediator aplicado a un chat interno.
+Proyecto de prueba en evolucion.
 
-## Idea
+Prototipo con el patron Mediator aplicado a un chat interno.
+
+## Diseno
 
 Los usuarios no se comunican entre si directamente. En su lugar, envian mensajes a una sala que coordina la comunicacion.
 

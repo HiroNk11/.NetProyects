@@ -1,4 +1,6 @@
-# 02 - Conversor de temperatura
+# Conversor de temperatura
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que permite convertir temperaturas entre Celsius, Fahrenheit y Kelvin.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# que permite convertir temperaturas entre Celsius, Fa
 - Evitar temperaturas Kelvin menores a 0
 - Mostrar un menu interactivo
 
-## Conceptos practicados
+## Implementacion
 
 - Operaciones matematicas
 - Metodos
@@ -21,10 +23,8 @@ Aplicacion de consola en C# que permite convertir temperaturas entre Celsius, Fa
 - Validacion con `double.TryParse`
 - Formato de numeros en pantalla
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un conversor de temperatura de consola que muestre un menu, permita elegir una conversion, pida una temperatura y muestre el resultado.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar conversiones entre Fahrenheit y Kelvin.

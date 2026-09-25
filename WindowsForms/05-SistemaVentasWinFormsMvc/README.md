@@ -1,4 +1,6 @@
-# 05 - Sistema de ventas WinForms MVC
+# Sistema de ventas WinForms MVC
+
+Proyecto de prueba en evolucion.
 
 Aplicacion Windows Forms para cargar clientes, productos y registrar ventas.
 
@@ -21,6 +23,8 @@ Aplicacion Windows Forms para cargar clientes, productos y registrar ventas.
 - Formulario enfocado en la interaccion visual
 - Preparado para reemplazar repositorios en memoria por Entity Framework
 
-## Mejora opcional
+## Evolucion del proyecto
+
+Propuesta pendiente para una proxima version:
 
 Agregar un proyecto de datos con Entity Framework y persistir clientes, productos y ventas en SQL Server.

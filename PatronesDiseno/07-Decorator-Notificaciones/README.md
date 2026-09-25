@@ -1,8 +1,10 @@
-# 07 - Decorator Notificaciones
+# Decorator Notificaciones
 
-Ejemplo del patron Decorator aplicado a un sistema de notificaciones.
+Proyecto de prueba en evolucion.
 
-## Idea
+Prototipo con el patron Decorator aplicado a un sistema de notificaciones.
+
+## Diseno
 
 Se parte de una notificacion simple por email y luego se agregan comportamientos sin modificar la clase original.
 

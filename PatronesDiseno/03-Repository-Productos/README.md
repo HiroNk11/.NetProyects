@@ -1,4 +1,6 @@
-# 03 - Repository - Productos
+# Repository - Productos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que usa el patron Repository para separar la logica de negocio del almacenamiento de productos.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# que usa el patron Repository para separar la logica 
 - Descontar stock despues de una venta
 - Usar un repositorio en memoria
 
-## Conceptos practicados
+## Implementacion
 
 - Patron Repository
 - Interfaces
@@ -20,10 +22,8 @@ Aplicacion de consola en C# que usa el patron Repository para separar la logica 
 - Reglas de negocio
 - Validaciones de stock
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de productos donde el servicio de negocio dependa de una interfaz `IProductoRepository` y no de una lista concreta.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Crear una implementacion `ProductoRepositorySqlServer` usando ADO.NET sin modificar `ProductoService`.

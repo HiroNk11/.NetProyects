@@ -1,4 +1,6 @@
-# 03 - Serializacion JSON XML
+# Serializacion JSON XML
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola que guarda y lee productos en archivos JSON y XML usando clases incluidas en .NET Framework.
 

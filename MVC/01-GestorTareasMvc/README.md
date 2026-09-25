@@ -1,4 +1,6 @@
-# 01 - Gestor de tareas MVC
+# Gestor de tareas MVC
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que organiza un gestor de tareas usando el modelo MVC.
 
@@ -10,7 +12,7 @@ Aplicacion de consola en C# que organiza un gestor de tareas usando el modelo MV
 - Separar datos, vista y controlador
 - Mantener las tareas en memoria
 
-## Conceptos practicados
+## Implementacion
 
 - Modelo MVC
 - Modelos
@@ -20,10 +22,8 @@ Aplicacion de consola en C# que organiza un gestor de tareas usando el modelo MV
 - Repositorio en memoria
 - Flujo de datos entre capas
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un gestor de tareas separando la informacion en modelos, la salida por consola en vistas y la coordinacion del programa en controladores.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Crear una segunda version usando ASP.NET MVC para llevar el mismo concepto a una aplicacion web.

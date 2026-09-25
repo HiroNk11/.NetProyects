@@ -1,4 +1,6 @@
-# 01 - Notificador de pedidos
+# Notificador de pedidos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que confirma un pedido y envia una notificacion por distintos canales.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# que confirma un pedido y envia una notificacion por 
 - Enviar notificacion por WhatsApp
 - Cambiar el canal sin modificar la clase `PedidoService`
 
-## Conceptos practicados
+## Implementacion
 
 - Principio de responsabilidad unica
 - Principio abierto/cerrado
@@ -21,10 +23,8 @@ Aplicacion de consola en C# que confirma un pedido y envia una notificacion por 
 - Patron Factory simple
 - Separacion entre reglas de negocio y detalles de comunicacion
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un servicio de pedidos que confirme una compra y notifique al cliente usando una abstraccion `INotificador`.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar un nuevo canal, por ejemplo `PushNotificador`, sin modificar `PedidoService`.

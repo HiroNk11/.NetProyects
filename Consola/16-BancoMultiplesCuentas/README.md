@@ -1,4 +1,6 @@
-# 16 - Banco con multiples cuentas
+# Banco con multiples cuentas
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar varias cuentas bancarias y realizar transferencias.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# para administrar varias cuentas bancarias y realizar
 - Validar saldo insuficiente
 - Consultar movimientos por cuenta
 
-## Conceptos practicados
+## Implementacion
 
 - Encapsulamiento con `private set`
 - Relaciones entre objetos
@@ -22,10 +24,8 @@ Aplicacion de consola en C# para administrar varias cuentas bancarias y realizar
 - Historial de movimientos
 - `decimal` para importes
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema bancario que permita administrar multiples cuentas y transferir dinero entre ellas registrando movimientos.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar tipos de cuenta, limite de descubierto o guardado de cuentas y movimientos en archivos.

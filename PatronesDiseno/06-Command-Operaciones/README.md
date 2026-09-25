@@ -1,8 +1,10 @@
-# 06 - Command Operaciones
+# Command Operaciones
 
-Ejemplo del patron Command aplicado a operaciones bancarias con historial y deshacer.
+Proyecto de prueba en evolucion.
 
-## Idea
+Prototipo con el patron Command aplicado a operaciones bancarias con historial y deshacer.
+
+## Diseno
 
 Cada accion se representa como un comando. El invocador ejecuta comandos sin conocer los detalles de la cuenta bancaria.
 

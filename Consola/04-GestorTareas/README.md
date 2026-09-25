@@ -1,4 +1,6 @@
-# 04 - Gestor de tareas
+# Gestor de tareas
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar una lista simple de tareas en memoria.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# para administrar una lista simple de tareas en memor
 - Validar datos ingresados por el usuario
 - Buscar tareas por ID
 
-## Conceptos practicados
+## Implementacion
 
 - Clases y objetos
 - Propiedades
@@ -21,10 +23,8 @@ Aplicacion de consola en C# para administrar una lista simple de tareas en memor
 - Busqueda con `FirstOrDefault`
 - Validacion con `int.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un gestor de tareas de consola que permita cargar tareas, mostrarlas, completarlas y eliminarlas usando una lista en memoria.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Guardar las tareas en un archivo para que no se pierdan al cerrar el programa.

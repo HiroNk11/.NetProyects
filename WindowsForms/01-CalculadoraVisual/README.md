@@ -1,4 +1,6 @@
-# 01 - Calculadora visual
+# Calculadora visual
+
+Proyecto de prueba en evolucion.
 
 Aplicacion Windows Forms en C# que permite realizar operaciones matematicas simples desde una interfaz grafica.
 
@@ -12,7 +14,7 @@ Aplicacion Windows Forms en C# que permite realizar operaciones matematicas simp
 - Evitar division por cero
 - Mostrar mensajes de error con `MessageBox`
 
-## Conceptos practicados
+## Implementacion
 
 - Aplicaciones Windows Forms
 - Formularios y controles visuales
@@ -22,10 +24,8 @@ Aplicacion Windows Forms en C# que permite realizar operaciones matematicas simp
 - Validacion con `double.TryParse`
 - Manejo de excepciones con `try/catch`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una calculadora visual que permita ingresar dos numeros, elegir una operacion y mostrar el resultado en pantalla.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar un boton para limpiar los campos o guardar un historial de operaciones realizadas.

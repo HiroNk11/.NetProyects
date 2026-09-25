@@ -1,4 +1,6 @@
-# 07 - Agenda de contactos con CSV
+# Agenda de contactos con CSV
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar contactos y guardarlos en un archivo CSV.
 
@@ -14,7 +16,7 @@ Aplicacion de consola en C# para administrar contactos y guardarlos en un archiv
 - Validar campos obligatorios
 - Validar email de forma simple
 
-## Conceptos practicados
+## Implementacion
 
 - Manejo de archivos con `File`
 - Lectura con `File.ReadAllLines`
@@ -24,10 +26,8 @@ Aplicacion de consola en C# para administrar contactos y guardarlos en un archiv
 - `List<T>`
 - LINQ con `Where`, `FirstOrDefault` y `Max`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una agenda de contactos que permita administrar datos desde consola y conservarlos en un archivo CSV al cerrar y volver a abrir el programa.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar confirmacion antes de eliminar o exportar los contactos ordenados alfabeticamente.

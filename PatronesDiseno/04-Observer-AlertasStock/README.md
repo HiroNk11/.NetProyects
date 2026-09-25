@@ -1,8 +1,10 @@
-# 04 - Observer Alertas Stock
+# Observer Alertas Stock
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola que muestra el patron Observer con alertas cuando un producto llega a stock bajo.
 
-## Idea
+## Diseno
 
 El producto no conoce los detalles de cada alerta. Solo notifica a los observadores suscriptos cuando cambia el stock.
 

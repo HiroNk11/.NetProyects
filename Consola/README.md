@@ -1,6 +1,6 @@
 # Proyectos de consola
 
-Ejercicios progresivos para practicar fundamentos de C# y programacion orientada a objetos desde aplicaciones de consola.
+Proyectos de prueba con interfaz de consola para gestionar informacion, simular operaciones y validar reglas de negocio en C#.
 
 ## Proyectos
 
@@ -14,7 +14,7 @@ Ejercicios progresivos para practicar fundamentos de C# y programacion orientada
 8. `08-GestorProductos` - Productos, precios y stock.
 9. `09-CajeroAutomatico` - Cuenta bancaria, saldo y movimientos.
 
-## Conceptos principales
+## Base tecnica
 
 - Sintaxis basica
 - Condicionales y ciclos

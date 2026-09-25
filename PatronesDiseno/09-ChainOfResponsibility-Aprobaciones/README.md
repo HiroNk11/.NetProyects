@@ -1,8 +1,10 @@
-# 09 - Chain Of Responsibility Aprobaciones
+# Chain Of Responsibility Aprobaciones
 
-Ejemplo del patron Chain of Responsibility aplicado a aprobaciones de gastos.
+Proyecto de prueba en evolucion.
 
-## Idea
+Prototipo con el patron Chain of Responsibility aplicado a aprobaciones de gastos.
+
+## Diseno
 
 Cada aprobador decide si puede resolver la solicitud. Si no puede, la pasa al siguiente responsable de la cadena.
 

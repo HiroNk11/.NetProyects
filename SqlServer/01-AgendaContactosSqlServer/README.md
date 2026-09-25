@@ -1,4 +1,6 @@
-# 01 - Agenda de contactos con SQL Server
+# Agenda de contactos con SQL Server
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que permite guardar contactos en una base de datos SQL Server usando ADO.NET.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# que permite guardar contactos en una base de datos S
 - Usar comandos SQL parametrizados
 - Manejar errores de conexion
 
-## Conceptos practicados
+## Implementacion
 
 - Conexion a SQL Server
 - ADO.NET
@@ -21,10 +23,6 @@ Aplicacion de consola en C# que permite guardar contactos en una base de datos S
 - Parametros SQL
 - Patron Repository simple
 - Separacion entre modelo, acceso a datos y menu
-
-## Consigna
-
-Crear una agenda que guarde contactos en SQL Server y permita listar, agregar y eliminar registros.
 
 ## Base de datos
 
@@ -36,6 +34,8 @@ Server=(localdb)\MSSQLLocalDB;Database=AgendaContactosDb;Integrated Security=Tru
 
 Si se usa otra instancia de SQL Server, modificar la constante `ConnectionString` en `Program.cs`.
 
-## Mejora opcional
+## Evolucion del proyecto
+
+Propuesta pendiente para una proxima version:
 
 Agregar la opcion de editar contactos o buscar por nombre.

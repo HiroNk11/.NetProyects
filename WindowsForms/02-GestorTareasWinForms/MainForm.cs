@@ -80,8 +80,8 @@ namespace GestorTareasWinForms
 
         private void CargarDatosIniciales()
         {
-            _gestor.Agregar("Revisar ejercicios de consola");
-            _gestor.Agregar("Practicar eventos de Windows Forms");
+            _gestor.Agregar("Revisar reporte de ventas");
+            _gestor.Agregar("Actualizar inventario de productos");
             _gestor.Agregar("Subir cambios a GitHub");
         }
 

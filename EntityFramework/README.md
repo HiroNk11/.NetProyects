@@ -1,6 +1,6 @@
 # Entity Framework
 
-Ejemplos y guias para migrar proyectos del repositorio hacia persistencia con Entity Framework.
+Documentacion de integracion y componentes de referencia para evolucionar la persistencia de los proyectos hacia Entity Framework.
 
 ## Proyectos
 

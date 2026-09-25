@@ -1,4 +1,6 @@
-# 02 - Factory - Metodos de pago
+# Factory - Metodos de pago
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que usa el patron Factory para crear distintos metodos de pago.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# que usa el patron Factory para crear distintos metod
 - Pagar por transferencia
 - Aplicar recargo o descuento segun el metodo
 
-## Conceptos practicados
+## Implementacion
 
 - Patron Factory
 - Interfaces
@@ -20,10 +22,8 @@ Aplicacion de consola en C# que usa el patron Factory para crear distintos metod
 - Separacion entre creacion y uso
 - Validaciones con `decimal.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una aplicacion donde el usuario elija un metodo de pago y una factory se encargue de devolver el objeto correcto.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar un metodo de pago con billetera virtual sin modificar `ProcesadorPago`.

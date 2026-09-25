@@ -1,6 +1,8 @@
-# 17 - Reportes Ventas LINQ
+# Reportes Ventas LINQ
 
-Aplicacion de consola para practicar consultas con LINQ sobre una coleccion de ventas.
+Proyecto de prueba en evolucion.
+
+Aplicacion de consola para generar reportes con LINQ sobre una coleccion de ventas.
 
 ## Consultas incluidas
 
@@ -9,7 +11,7 @@ Aplicacion de consola para practicar consultas con LINQ sobre una coleccion de v
 - Ventas mayores a un importe minimo.
 - Promedio de venta por region.
 
-## Conceptos practicados
+## Implementacion
 
 - `Where`
 - `GroupBy`

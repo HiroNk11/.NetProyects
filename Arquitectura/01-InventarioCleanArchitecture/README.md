@@ -1,4 +1,6 @@
-# 01 - Inventario Clean Architecture
+# Inventario Clean Architecture
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola para administrar productos de inventario usando una estructura cercana a Clean Architecture.
 

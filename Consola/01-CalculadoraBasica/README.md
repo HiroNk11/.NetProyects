@@ -1,4 +1,6 @@
-# 01 - Calculadora basica
+# Calculadora basica
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# que permite realizar operaciones matematicas simples.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# que permite realizar operaciones matematicas simples
 - Evitar division por cero
 - Mostrar un menu interactivo
 
-## Conceptos practicados
+## Implementacion
 
 - Variables
 - Condicionales
@@ -21,10 +23,8 @@ Aplicacion de consola en C# que permite realizar operaciones matematicas simples
 - Metodos
 - Validacion con `double.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una calculadora de consola que muestre un menu, permita elegir una operacion, pida dos numeros y muestre el resultado.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar una opcion para calcular potencia o porcentaje.

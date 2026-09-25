@@ -1,4 +1,6 @@
-# 08 - Gestor de productos
+# Gestor de productos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar productos y calcular el valor total del inventario.
 
@@ -12,7 +14,7 @@ Aplicacion de consola en C# para administrar productos y calcular el valor total
 - Calcular el valor total del inventario
 - Validar datos ingresados por el usuario
 
-## Conceptos practicados
+## Implementacion
 
 - Clases y objetos
 - `List<T>`
@@ -23,10 +25,8 @@ Aplicacion de consola en C# para administrar productos y calcular el valor total
 - `FirstOrDefault`
 - Validaciones con `int.TryParse` y `decimal.TryParse`
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un gestor de productos que permita administrar nombre, precio y stock, y calcular el valor total del inventario.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar categorias de productos o guardar el inventario en un archivo CSV.

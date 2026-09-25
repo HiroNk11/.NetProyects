@@ -1,6 +1,6 @@
 # Patrones de diseno
 
-Ejemplos simples de patrones de diseno aplicados a funcionalidades concretas.
+Proyectos de prueba que aplican patrones de diseno a descuentos, pagos, reportes, notificaciones y otros flujos concretos.
 
 ## Proyectos
 
@@ -14,7 +14,9 @@ Ejemplos simples de patrones de diseno aplicados a funcionalidades concretas.
 8. `08-Mediator-Chat` - Coordinar mensajes entre usuarios sin acoplarlos directamente.
 9. `09-ChainOfResponsibility-Aprobaciones` - Resolver aprobaciones con una cadena de responsables.
 
-## Proximos patrones sugeridos
+## Lineas de evolucion
+
+Posibles incorporaciones para futuras versiones; todavia no estan implementadas:
 
 10. `10-Facade-Reportes`
 11. `11-Proxy-Cache`

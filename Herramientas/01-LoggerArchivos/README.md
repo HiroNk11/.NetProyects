@@ -1,4 +1,6 @@
-# 01 - Logger Archivos
+# Logger Archivos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola que muestra como registrar mensajes en consola y archivo usando una interfaz comun.
 

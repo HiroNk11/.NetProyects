@@ -1,4 +1,6 @@
-# 02 - Pedidos API MVC EF6
+# Pedidos API MVC EF6
+
+Proyecto de prueba en evolucion.
 
 API REST de pedidos usando ASP.NET Web API 2, .NET Framework 4.8, MVC/Web API, Repository, Services y Entity Framework 6.
 

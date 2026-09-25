@@ -1,4 +1,6 @@
-# 02 - Gestor de tareas Windows Forms
+# Gestor de tareas Windows Forms
+
+Proyecto de prueba en evolucion.
 
 Aplicacion Windows Forms en C# que permite administrar tareas desde una interfaz grafica.
 
@@ -11,7 +13,7 @@ Aplicacion Windows Forms en C# que permite administrar tareas desde una interfaz
 - Validar que la descripcion no este vacia
 - Mostrar mensajes con `MessageBox`
 
-## Conceptos practicados
+## Implementacion
 
 - Windows Forms
 - `DataGridView`
@@ -21,10 +23,8 @@ Aplicacion Windows Forms en C# que permite administrar tareas desde una interfaz
 - Validaciones de interfaz
 - Actualizacion de datos visuales
 
-## Consigna
+## Evolucion del proyecto
 
-Crear una aplicacion visual para gestionar tareas, permitiendo agregar, completar y eliminar registros desde un formulario.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Guardar las tareas en un archivo CSV o conectarlas a SQL Server.

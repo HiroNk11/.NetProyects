@@ -1,4 +1,6 @@
-# 14 - Sistema de turnos
+# Sistema de turnos
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para agendar y administrar turnos simples.
 
@@ -11,7 +13,7 @@ Aplicacion de consola en C# para agendar y administrar turnos simples.
 - Evitar turnos duplicados para un profesional
 - Validar fechas futuras
 
-## Conceptos practicados
+## Implementacion
 
 - `DateTime`
 - `DateTime.TryParseExact`
@@ -22,10 +24,8 @@ Aplicacion de consola en C# para agendar y administrar turnos simples.
 - Encapsulamiento simple
 - Reglas de negocio
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de turnos que permita agendar pacientes con profesionales y evitar choques de agenda.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar especialidades, duracion de turnos o persistencia en archivo CSV.

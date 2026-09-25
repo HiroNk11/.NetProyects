@@ -1,6 +1,6 @@
 # Herramientas
 
-Ejemplos practicos para complementar proyectos de C# con herramientas comunes de desarrollo.
+Componentes de prueba para incorporar logging, configuracion y serializacion a proyectos de C#.
 
 ## Proyectos
 
@@ -8,7 +8,7 @@ Ejemplos practicos para complementar proyectos de C# con herramientas comunes de
 2. `02-ConfiguracionAppConfig` - Lectura de valores desde `App.config`.
 3. `03-SerializacionJsonXml` - Guardar y leer datos usando JSON y XML.
 
-## Conceptos practicados
+## Implementacion
 
 - Logging basico
 - Configuracion externa

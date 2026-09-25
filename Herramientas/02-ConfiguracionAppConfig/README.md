@@ -1,4 +1,6 @@
-# 02 - Configuracion AppConfig
+# Configuracion AppConfig
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola que lee valores desde `App.config`.
 

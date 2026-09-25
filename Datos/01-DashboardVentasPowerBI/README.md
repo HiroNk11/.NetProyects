@@ -1,4 +1,6 @@
-# 01 - Dashboard de ventas para Power BI
+# Dashboard de ventas para Power BI
+
+Proyecto de prueba en evolucion.
 
 Proyecto de datos en C# que genera archivos CSV para crear un dashboard comercial en Power BI.
 
@@ -11,7 +13,7 @@ Proyecto de datos en C# que genera archivos CSV para crear un dashboard comercia
 - Incluir script SQL Server para crear el modelo relacional
 - Proponer medidas DAX para Power BI
 
-## Conceptos practicados
+## Implementacion
 
 - Generacion de datos con C#
 - Exportacion a CSV
@@ -66,10 +68,8 @@ dotnet run --project Datos\01-DashboardVentasPowerBI\DashboardVentasPowerBI.cspr
 
 Los CSV se generan en la carpeta `bin/Debug/net48/data`.
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un dataset comercial que pueda analizarse en Power BI, identificando ventas, costos, ganancia, margen y rendimiento por categoria, provincia, canal y vendedor.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar una tabla calendario en Power BI y crear medidas de ventas acumuladas, ventas del mes anterior y variacion porcentual mensual.

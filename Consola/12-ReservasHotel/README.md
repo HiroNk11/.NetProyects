@@ -1,4 +1,6 @@
-# 12 - Sistema de reservas de hotel
+# Sistema de reservas de hotel
+
+Proyecto de prueba en evolucion.
 
 Aplicacion de consola en C# para administrar reservas simples de habitaciones de hotel.
 
@@ -13,7 +15,7 @@ Aplicacion de consola en C# para administrar reservas simples de habitaciones de
 - Verificar disponibilidad de habitaciones
 - Calcular noches y total de la estadia
 
-## Conceptos practicados
+## Implementacion
 
 - Clases relacionadas
 - `List<T>`
@@ -23,10 +25,8 @@ Aplicacion de consola en C# para administrar reservas simples de habitaciones de
 - Busquedas con LINQ
 - Reglas de negocio
 
-## Consigna
+## Evolucion del proyecto
 
-Crear un sistema de consola que permita reservar habitaciones, evitando superposiciones de fechas para una misma habitacion.
-
-## Mejora opcional
+Propuesta pendiente para una proxima version:
 
 Agregar tipos de clientes, descuentos o guardado de reservas en archivo CSV.
