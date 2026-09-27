@@ -1,0 +1,17 @@
+@model CreateTicketInput
+@{ ViewData["Title"] = "Nuevo ticket"; }
+<a class="back-link" asp-action="Index">← Volver a la bandeja</a>
+<div class="page-heading"><div><p class="eyebrow">NUEVA SOLICITUD</p><h1>Contanos qué pasó.</h1><p class="muted">Un poco de contexto ayuda al equipo a encontrar una solución.</p></div></div>
+<div class="detail-grid">
+<section class="panel form-panel">
+    <h2>Información del ticket</h2>
+    <form asp-action="Create" method="post" class="stack">
+        <div asp-validation-summary="All" class="validation" role="alert"></div>
+        <div><label asp-for="Title"></label><input asp-for="Title" minlength="5" maxlength="120" placeholder="Ej.: No puedo acceder al sistema de ventas" required /></div>
+        <div><label asp-for="Description"></label><textarea asp-for="Description" rows="7" minlength="10" maxlength="4000" placeholder="¿Qué estabas intentando hacer? ¿Qué ocurrió?" required></textarea></div>
+        <div><label asp-for="Priority"></label><select asp-for="Priority" asp-items="Html.GetEnumSelectList<TicketPriority>()"></select></div>
+        <div class="form-actions"><button class="button primary">Crear ticket</button><a class="button secondary" asp-action="Index">Cancelar</a></div>
+    </form>
+</section>
+<aside class="panel help-panel"><p class="eyebrow">ANTES DE ENVIAR</p><h2>El detalle hace la diferencia.</h2><p>Incluí los pasos que seguiste y el mensaje de error, si lo hay.</p><hr /><h3>Elegí la prioridad</h3><p><strong>Urgente:</strong> una operación crítica está detenida.</p><p><strong>Alta:</strong> afecta el trabajo y requiere atención pronta.</p><p><strong>Media o baja:</strong> consultas, ajustes y solicitudes habituales.</p><p class="small muted">No incluyas contraseñas ni información sensible en el ticket.</p></aside>
+</div>

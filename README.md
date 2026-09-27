@@ -1,10 +1,16 @@
-# Proyectos de prueba en C# y .NET Framework
+# Proyectos de prueba en C# y .NET
 
-Coleccion de proyectos de prueba en C# y .NET Framework para explorar soluciones de consola, escritorio, APIs y persistencia de datos. Cada proyecto tiene un alcance concreto y puede evolucionar de forma independiente.
+Coleccion de proyectos de prueba en C#, .NET Framework y ASP.NET Core para explorar soluciones de consola, escritorio, web, APIs y persistencia de datos. Cada proyecto tiene un alcance concreto y puede evolucionar de forma independiente.
+
+## Proyecto destacado
+
+[Mesa de ayuda web](Web/01-MesaAyuda/README.md): aplicacion con usuarios y roles, seguimiento de tickets, comentarios, historial y control de concurrencia. Implementada con ASP.NET Core MVC sobre .NET 10, Identity, EF Core y SQLite, con pruebas unitarias y de integracion HTTP.
 
 ## Estructura
 
 ```text
+Web/
+  01-MesaAyuda/
 Consola/
   01-CalculadoraBasica/
   02-ConversorTemperatura/
@@ -176,7 +182,9 @@ Las funcionalidades actuales se describen en cada README. Las secciones de evolu
 
 ## Scripts
 
-1. `scripts/build-all.ps1` compila todos los proyectos SDK-style del repositorio.
+1. `scripts/build-all.ps1` compila todos los proyectos SDK-style del repositorio; requiere Windows y el SDK .NET 10 para incluir la mesa de ayuda.
+2. `scripts/build-all.ps1 -FrameworkOnly` compila solo los proyectos de .NET Framework.
+3. El workflow `mesa-ayuda.yml` compila, ejecuta las pruebas y verifica la publicacion de la aplicacion web en Linux.
 
 ## Evolucion del repositorio
 
@@ -190,3 +198,5 @@ Lineas abiertas para ampliar los proyectos existentes y desarrollar nuevas varia
 ## Como ejecutar
 
 Abrir el proyecto correspondiente en Visual Studio y ejecutar con `Ctrl + F5`.
+
+Para la mesa de ayuda, seguir la [guia de ejecucion con .NET CLI](Web/01-MesaAyuda/README.md#ejecutar-localmente). No requiere Visual Studio ni SQL Server.

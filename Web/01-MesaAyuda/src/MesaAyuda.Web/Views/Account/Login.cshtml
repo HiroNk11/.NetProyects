@@ -1,0 +1,20 @@
+@model LoginInput
+@inject IWebHostEnvironment Environment
+@inject IConfiguration Configuration
+@{ ViewData["Title"] = "Ingresar"; }
+<div class="login-grid">
+    <section class="login-intro"><p class="eyebrow">TU EQUIPO, CONECTADO</p><h1>Menos pendientes.<br /><span>Más soluciones.</span></h1><p>Un espacio compartido para organizar solicitudes, conversar con soporte y seguir cada avance.</p><div class="login-steps"><span>01 / Registrá tu solicitud</span><span>02 / Seguí la conversación</span><span>03 / Resolvé en equipo</span></div></section>
+    <section class="panel form-panel login-card"><p class="eyebrow">BIENVENIDO A MESA</p><h2>Ingresá a tu espacio</h2><p class="muted">Usá tu cuenta para ver los tickets.</p>
+        <form asp-action="Login" method="post" class="stack">
+            <input asp-for="ReturnUrl" type="hidden" />
+            <div asp-validation-summary="All" class="validation" role="alert"></div>
+            <div><label asp-for="Email"></label><input asp-for="Email" autocomplete="username" placeholder="nombre@equipo.com" required /></div>
+            <div><label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password" required /></div>
+            <button class="button primary">Ingresar →</button>
+        </form>
+        @if (Environment.IsDevelopment() && Configuration.GetValue<bool>("Demo:Enabled"))
+        {
+            <details class="demo"><summary>Probar con una cuenta de demostración</summary><p>admin@@mesa.local<br />tecnico@@mesa.local<br />solicitante@@mesa.local</p><p>Contraseña: <code>Demo.Soporte2026!</code></p></details>
+        }
+    </section>
+</div>

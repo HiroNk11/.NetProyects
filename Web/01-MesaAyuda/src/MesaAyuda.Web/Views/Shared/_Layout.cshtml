@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · Mesa de ayuda</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="brand" asp-controller="Tickets" asp-action="Index"><span class="brand-icon">m.</span> mesa<span class="brand-dot">/</span></a>
+        <p class="sidebar-label">ESPACIO DE TRABAJO</p>
+        <nav aria-label="Navegación principal">
+            <a class="nav-link" asp-controller="Tickets" asp-action="Index"><span aria-hidden="true">▤</span> Bandeja de tickets</a>
+            @if (User.Identity?.IsAuthenticated == true)
+            { <a class="nav-link" asp-controller="Tickets" asp-action="Create"><span aria-hidden="true">＋</span> Crear un ticket</a> }
+        </nav>
+        <div class="sidebar-bottom">
+            <span class="online-dot"></span> Un lugar para resolver.
+            <p>Soporte con contexto.<br />Cada solicitud, en seguimiento.</p>
+        </div>
+    </aside>
+    <div class="workspace">
+        <header class="topbar">
+            <span>Operaciones <span class="separator">/</span> Centro de soporte</span>
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <div class="account"><span>@User.Identity.Name</span>
+                    <form asp-controller="Account" asp-action="Logout" method="post"><button class="text-button">Salir</button></form>
+                </div>
+            }
+            else { <span class="topbar-note">MESA DE AYUDA</span> }
+        </header>
+        <main id="main">
+            @if (TempData["Success"] is string message) { <div class="alert success" role="status">@message</div> }
+            @RenderBody()
+        </main>
+        <footer>mesa / Gestión de soporte <span>Proyecto de prueba · v1</span></footer>
+    </div>
+</div>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -7,3 +7,5 @@ obj/
 *.log
 TestResults/
 packages/
+App_Data/
+artifacts/

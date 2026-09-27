@@ -1,0 +1,55 @@
+@model TicketListView
+@{ ViewData["Title"] = "Bandeja de tickets"; }
+<div class="page-heading">
+    <div><p class="eyebrow">SOPORTE / VISTA GENERAL</p><h1>Todo bajo seguimiento.</h1><p class="muted">Organizá las solicitudes y acompañá cada caso hasta su resolución.</p></div>
+    <a class="button primary" asp-action="Create">＋ Nuevo ticket</a>
+</div>
+<section class="metrics" aria-label="Resumen de tus tickets visibles">
+    <article class="metric"><span>Nuevos</span><strong>@Model.Open.ToString("00")</strong><small><i class="dot blue"></i> Por comenzar</small></article>
+    <article class="metric"><span>En curso</span><strong>@Model.InProgress.ToString("00")</strong><small><i class="dot amber"></i> En manos del equipo</small></article>
+    <article class="metric"><span>Resueltos</span><strong>@Model.Resolved.ToString("00")</strong><small><i class="dot green"></i> Listos para cerrar</small></article>
+    <article class="metric"><span>Urgentes sin cerrar</span><strong>@Model.Urgent.ToString("00")</strong><small><i class="dot red"></i> Atención prioritaria</small></article>
+</section>
+<section class="panel">
+    <div class="panel-heading"><h2>Bandeja de tickets <span class="count">@Model.Total</span></h2><span class="muted">Última actividad primero</span></div>
+    <form method="get" class="filters" aria-label="Filtrar tickets">
+        <div class="search-field"><label for="Query">Buscar</label><input id="Query" name="Query" value="@Model.Filter.Query" maxlength="100" placeholder="Título o descripción..." /></div>
+        <div><label for="Status">Estado</label><select id="Status" name="Status">
+            <option value="">Todos los estados</option>
+            @foreach (var status in Enum.GetValues<TicketStatus>())
+            { <option value="@status" selected="@(Model.Filter.Status == status)">@StatusText.Label(status)</option> }
+        </select></div>
+        <div><label for="Priority">Prioridad</label><select id="Priority" name="Priority">
+            <option value="">Todas las prioridades</option>
+            @foreach (var priority in Enum.GetValues<TicketPriority>())
+            { <option value="@priority" selected="@(Model.Filter.Priority == priority)">@priority</option> }
+        </select></div>
+        <button class="button secondary">Filtrar</button><a asp-action="Index" class="text-button">Limpiar</a>
+    </form>
+    <div class="table-wrap">
+        <table>
+            <thead><tr><th scope="col">Solicitud</th><th scope="col">Estado</th><th scope="col">Prioridad</th><th scope="col">Responsable</th><th scope="col">Actualizado · UTC</th></tr></thead>
+            <tbody>
+            @foreach (var ticket in Model.Tickets)
+            {
+                <tr>
+                    <td><span class="ticket-id">MESA-@ticket.Id.ToString("D4")</span><a class="ticket-title" asp-action="Details" asp-route-id="@ticket.Id">@ticket.Title</a><span class="muted small">@ticket.Requester.DisplayName</span></td>
+                    <td><span class="badge @ticket.Status">@StatusText.Label(ticket.Status)</span></td>
+                    <td><span class="priority @ticket.Priority"><i class="dot"></i>@ticket.Priority</span></td>
+                    <td>@(ticket.Technician?.DisplayName ?? "Sin asignar")</td>
+                    <td class="muted small">@ticket.UpdatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+    @if (Model.Total == 0)
+    { <div class="empty"><h3>No hay tickets para mostrar.</h3><p>Probá con otros filtros o creá una nueva solicitud.</p><a asp-action="Create" class="button secondary">Crear ticket</a></div> }
+    <div class="pagination"><span>Página @Model.Filter.Page de @Model.Pages · @Model.Total resultados</span><div>
+        @if (Model.Filter.Page > 1)
+        { <a class="button secondary" asp-route-Query="@Model.Filter.Query" asp-route-Status="@Model.Filter.Status" asp-route-Priority="@Model.Filter.Priority" asp-route-Page="@(Model.Filter.Page - 1)">Anterior</a> }
+        @if (Model.Filter.Page < Model.Pages)
+        { <a class="button secondary" asp-route-Query="@Model.Filter.Query" asp-route-Status="@Model.Filter.Status" asp-route-Priority="@Model.Filter.Priority" asp-route-Page="@(Model.Filter.Page + 1)">Siguiente</a> }
+    </div></div>
+</section>
+<p class="small muted footnote">El resumen incluye todos los tickets a los que tenés acceso. Los filtros se aplican a la bandeja.</p>

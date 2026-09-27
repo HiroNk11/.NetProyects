@@ -1,0 +1,40 @@
+name: Mesa de ayuda - build and tests
+
+on:
+  push:
+    branches: [main]
+    paths: ["Web/01-MesaAyuda/**", ".github/workflows/mesa-ayuda.yml"]
+  pull_request:
+    branches: [main]
+    paths: ["Web/01-MesaAyuda/**", ".github/workflows/mesa-ayuda.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Web/01-MesaAyuda
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Restore
+        run: dotnet restore MesaAyuda.slnx
+      - name: Build
+        run: dotnet build MesaAyuda.slnx -c Release --no-restore
+      - name: Unit and HTTP integration tests
+        run: dotnet test MesaAyuda.slnx -c Release --no-build --logger trx --collect:"XPlat Code Coverage" --results-directory artifacts/tests
+      - name: Publish
+        run: dotnet publish src/MesaAyuda.Web -c Release --no-build -o artifacts/app
+      - name: Test results and coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mesa-ayuda-test-results
+          path: Web/01-MesaAyuda/artifacts/tests
+          if-no-files-found: warn
