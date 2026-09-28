@@ -6,14 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var dataDirectory = Path.Combine(builder.Environment.ContentRootPath, "App_Data");
-Directory.CreateDirectory(dataDirectory);
-builder.Services.AddDbContext<HelpdeskDbContext>((services, options) =>
+var provider = builder.Configuration["Database:Provider"] ?? "SQLite";
+if (provider.Equals("SqlServer", StringComparison.OrdinalIgnoreCase))
 {
-    var connection = services.GetRequiredService<IConfiguration>().GetConnectionString("Helpdesk")
-        ?? $"Data Source={Path.Combine(dataDirectory, "mesa-ayuda.db")}";
-    options.UseSqlite(connection);
-});
+    builder.Services.AddDbContext<SqlServerHelpdeskDbContext>((services, options) =>
+        options.UseSqlServer(services.GetRequiredService<IConfiguration>().GetConnectionString("Helpdesk")
+            ?? throw new InvalidOperationException("Falta ConnectionStrings:Helpdesk para SqlServer.")));
+    builder.Services.AddScoped<HelpdeskDbContext>(services => services.GetRequiredService<SqlServerHelpdeskDbContext>());
+}
+else if (provider.Equals("SQLite", StringComparison.OrdinalIgnoreCase))
+{
+    builder.Services.AddDbContext<HelpdeskDbContext>((services, options) =>
+    {
+        var connection = services.GetRequiredService<IConfiguration>().GetConnectionString("Helpdesk");
+        if (string.IsNullOrWhiteSpace(connection))
+        {
+            var directory = Path.Combine(builder.Environment.ContentRootPath, "App_Data");
+            Directory.CreateDirectory(directory);
+            connection = $"Data Source={Path.Combine(directory, "mesa-ayuda.db")}";
+        }
+        options.UseSqlite(connection);
+    });
+}
+else throw new InvalidOperationException("Database:Provider debe ser SQLite o SqlServer.");
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
     options.User.RequireUniqueEmail = true;
@@ -53,6 +68,8 @@ if (!app.Environment.IsEnvironment("Testing"))
     await db.Database.MigrateAsync();
     if (app.Environment.IsDevelopment() && app.Configuration.GetValue<bool>("Demo:Enabled"))
         await DemoData.InitializeAsync(scope.ServiceProvider);
+    else
+        await BootstrapAccounts.InitializeAsync(scope.ServiceProvider, app.Configuration);
 }
 app.Run();
 public partial class Program { }

@@ -12,6 +12,7 @@ flowchart LR
     MVC --> Servicio[TicketService]
     Servicio --> EF[HelpdeskDbContext]
     EF --> SQLite
+    EF --> SQL[SQL Server / Azure SQL]
     MVC --> Razor[Vistas Razor]
     Identity[ASP.NET Core Identity] --> EF
     MVC --> Identity
@@ -23,7 +24,9 @@ SQLite permite ejecutar la demostración sin instalar un servidor. Las relacione
 
 El servicio usa directamente EF Core: una capa de repositorios que solo repitiera sus métodos no aportaría valor al alcance actual. Las pruebas de integración usan el mismo proveedor relacional, para comprobar relaciones, transacciones y concurrencia.
 
-SQLite tiene límites de escritura concurrente. Cambiar a otro proveedor exige revisar migraciones, consultas y pruebas; no se asume que baste con cambiar la cadena de conexión.
+SQLite tiene límites de escritura concurrente. Para Azure se usa SQL Server mediante un contexto derivado y migraciones independientes, seleccionados con `Database:Provider`. Ambos comparten el modelo y el servicio. Las pruebas generan el script SQL Server y detectan cambios del modelo sin migración; todavía no sustituyen una prueba contra un servidor real.
+
+La inicialización privada crea roles y cuentas en una transacción. Valida todas las parejas de configuración antes de escribir, conserva contraseñas existentes y rechaza promociones de rol. Las contraseñas se proporcionan mediante variables privadas y se retiran después del primer acceso. La carga de datos demo sigue limitada a Development.
 
 ## Identidad y autorización
 

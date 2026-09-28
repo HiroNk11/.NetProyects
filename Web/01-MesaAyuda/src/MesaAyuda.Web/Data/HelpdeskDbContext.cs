@@ -2,8 +2,10 @@ using MesaAyuda.Web.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace MesaAyuda.Web.Data;
-public class HelpdeskDbContext(DbContextOptions<HelpdeskDbContext> options) : IdentityDbContext<AppUser>(options)
+public class HelpdeskDbContext : IdentityDbContext<AppUser>
 {
+    public HelpdeskDbContext(DbContextOptions<HelpdeskDbContext> options) : base(options) { }
+    protected HelpdeskDbContext(DbContextOptions options) : base(options) { }
     public DbSet<Ticket> Tickets => Set<Ticket>();
     public DbSet<TicketComment> Comments => Set<TicketComment>();
     public DbSet<TicketEvent> Events => Set<TicketEvent>();

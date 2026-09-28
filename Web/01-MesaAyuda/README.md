@@ -18,7 +18,8 @@ Un solicitante abre un ticket y agrega contexto mediante comentarios. El adminis
 - Asignación y reasignación de responsables por el administrador.
 - Comentarios y un historial de creación, asignación y cambios de estado.
 - Control de versión para detectar ediciones simultáneas.
-- SQLite con migración inicial de EF Core y datos de demostración.
+- SQLite local y SQL Server/Azure SQL, con migraciones independientes de EF Core.
+- Aprovisionamiento inicial de cuentas mediante configuración privada.
 - Diseño adaptable a escritorio y dispositivos móviles.
 
 ## Tecnologías
@@ -28,7 +29,7 @@ Un solicitante abre un ticket y agrega contexto mediante comentarios. El adminis
 | Plataforma | .NET 10, ASP.NET Core MVC |
 | Interfaz | Razor y CSS, sin dependencias de JavaScript |
 | Acceso | Identity, cookies, roles y protección antifalsificación |
-| Persistencia | EF Core 10 y SQLite |
+| Persistencia | EF Core 10, SQLite y SQL Server/Azure SQL |
 | Pruebas | xUnit, WebApplicationFactory y SQLite temporal |
 | Integración continua | GitHub Actions: compilación, pruebas, cobertura y publicación de prueba |
 
@@ -138,19 +139,26 @@ El manifiesto local fija la versión de `dotnet-ef`. Desde la carpeta de la solu
 
 ```bash
 dotnet tool restore
-dotnet ef migrations add NombreDelCambio --project src/MesaAyuda.Web
-dotnet ef database update --project src/MesaAyuda.Web
+dotnet ef migrations add NombreDelCambio --context HelpdeskDbContext --project src/MesaAyuda.Web
+dotnet ef database update --context HelpdeskDbContext --project src/MesaAyuda.Web
+dotnet ef migrations add NombreDelCambioSql --context SqlServerHelpdeskDbContext --output-dir Migrations/SqlServer --project src/MesaAyuda.Web
 ```
 
-La aplicación aplica migraciones al inicio para simplificar la prueba local. Antes de un despliegue compartido, conviene mover ese paso al proceso de entrega con revisión y respaldo de datos.
+Cada cambio del modelo requiere una migración por proveedor. Para operar con SQL Server, la herramienta toma `ConnectionStrings__Helpdesk` del entorno; sin esa variable usa LocalDB únicamente como valor de diseño. La aplicación aplica migraciones al inicio. Antes de un despliegue compartido, conviene mover ese paso al proceso de entrega con revisión y respaldo de datos.
+
+## Desplegar en Azure
+
+La [guía de despliegue](docs/despliegue-azure.md) explica cómo preparar App Service Windows, Azure SQL y las cuentas privadas. El script `scripts/publicar.ps1` genera el ZIP publicable. No incluye secretos ni la base local.
+
+`Database:Provider` selecciona `SQLite` (predeterminado) o `SqlServer`. Este último requiere `ConnectionStrings:Helpdesk`. `Bootstrap:Enabled` permite crear un administrador y, opcionalmente, un técnico y un solicitante mediante variables privadas. Se deshabilita tras el primer acceso; no reemplaza contraseñas ni eleva los permisos de cuentas existentes.
 
 ## Alcance de esta versión
 
-Es una aplicación funcional de demostración. Actualmente usa tres cuentas precargadas; no incluye altas de usuarios, recuperación de contraseña ni administración de roles desde la interfaz. Las opciones de asignación dependen de los técnicos existentes.
+Es una aplicación funcional de demostración. Ofrece cuentas locales de prueba y aprovisionamiento inicial privado para el despliegue; no incluye altas de usuarios, recuperación de contraseña ni administración de roles desde la interfaz. Las opciones de asignación dependen de los técnicos existentes.
 
-Tampoco incluye correo, adjuntos, SLA, despliegue público o persistencia de claves compartida entre instancias. El historial se registra desde el servicio de tickets, pero no pretende ser un registro de auditoría inmutable frente a cambios directos en la base.
+Tampoco incluye correo, adjuntos, SLA ni un despliegue público ya operativo. La guía utiliza la persistencia de claves predeterminada de App Service; otros alojamientos requieren configurarla. El historial se registra desde el servicio de tickets, pero no pretende ser un registro de auditoría inmutable frente a cambios directos en la base.
 
-Para un entorno real hacen falta aprovisionamiento de usuarios, configuración de HTTPS y claves, respaldo de SQLite y una revisión del despliegue. No se debe reutilizar la base de demostración.
+Para un equipo real hacen falta gestión del ciclo de vida de usuarios, respaldos, supervisión y revisión de permisos y despliegue. No se debe reutilizar la base de demostración. Las pruebas cubren los flujos con SQLite, la inicialización privada y la generación de migraciones SQL Server; falta ejecutar el recorrido contra el servicio Azure desplegado.
 
 ## Evolución del proyecto
 
@@ -164,4 +172,4 @@ Propuestas pendientes, aún no implementadas:
 - [ ] Exportación de reportes y búsqueda con normalización de tildes.
 - [ ] Pruebas de interfaz automatizadas.
 - [ ] Despliegue de demostración con configuración y almacenamiento persistentes.
-- [ ] Evaluar SQL Server o PostgreSQL y probar las migraciones específicas del proveedor.
+- [ ] Automatizar pruebas de integración contra un servidor SQL Server y el despliegue de Azure.
