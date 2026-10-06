@@ -2,9 +2,11 @@
 
 Coleccion de proyectos de prueba en C#, .NET Framework y ASP.NET Core para explorar soluciones de consola, escritorio, web, APIs y persistencia de datos. Cada proyecto tiene un alcance concreto y puede evolucionar de forma independiente.
 
-## Proyecto destacado
+## Proyectos destacados
 
 [Mesa de ayuda web](Web/01-MesaAyuda/README.md): aplicacion con usuarios y roles, seguimiento de tickets, comentarios, historial y control de concurrencia. Implementada con ASP.NET Core MVC sobre .NET 10, Identity, EF Core y SQLite, con pruebas unitarias y de integracion HTTP.
+
+[API de reservas de espacios](WebApi/05-ReservasEspacios/README.md): servicio con autenticacion privada, reservas sin superposiciones, reintentos idempotentes y cancelaciones. Implementado con ASP.NET Core 10 y SQLite, con contrato OpenAPI y pruebas HTTP de concurrencia.
 
 ## Estructura
 
@@ -68,6 +70,7 @@ WebApi/
   02-PedidosApiMvcEf6/
   03-TurnosApiMvcEf6/
   04-BibliotecaApiMvcEf6/
+  05-ReservasEspacios/
 Herramientas/
   01-LoggerArchivos/
   02-ConfiguracionAppConfig/
@@ -131,6 +134,7 @@ Las funcionalidades actuales se describen en cada README. Las secciones de evolu
 2. Pedidos API con relaciones, MVC y Entity Framework 6
 3. Turnos API con disponibilidad, MVC y Entity Framework 6
 4. Biblioteca API con prestamos, MVC y Entity Framework 6
+5. Reservas de espacios con ASP.NET Core 10, idempotencia y control de disponibilidad
 
 ## Principios SOLID
 
@@ -185,6 +189,7 @@ Las funcionalidades actuales se describen en cada README. Las secciones de evolu
 1. `scripts/build-all.ps1` compila todos los proyectos SDK-style del repositorio; requiere Windows y el SDK .NET 10 para incluir la mesa de ayuda.
 2. `scripts/build-all.ps1 -FrameworkOnly` compila solo los proyectos de .NET Framework.
 3. El workflow `mesa-ayuda.yml` compila, ejecuta las pruebas y verifica la publicacion de la aplicacion web en Linux.
+4. El workflow `reservas-espacios.yml` verifica la API moderna, incluidas sus pruebas HTTP y de concurrencia.
 
 ## Evolucion del repositorio
 
@@ -200,3 +205,5 @@ Lineas abiertas para ampliar los proyectos existentes y desarrollar nuevas varia
 Abrir el proyecto correspondiente en Visual Studio y ejecutar con `Ctrl + F5`.
 
 Para la mesa de ayuda, seguir la [guia de ejecucion con .NET CLI](Web/01-MesaAyuda/README.md#ejecutar-localmente). No requiere Visual Studio ni SQL Server.
+
+Para la API de reservas, seguir la [guia de ejecucion y recorrido HTTP](WebApi/05-ReservasEspacios/README.md#ejecutar). La credencial se configura en privado y no se incluye en el repositorio.

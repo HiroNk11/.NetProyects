@@ -8,3 +8,4 @@ Proyectos backend con endpoints HTTP, arquitectura por capas y persistencia.
 2. `02-PedidosApiMvcEf6` - API REST de pedidos con clientes, productos, items, stock y relaciones con Entity Framework 6.
 3. `03-TurnosApiMvcEf6` - API REST de turnos con pacientes, profesionales, validacion de disponibilidad y Entity Framework 6.
 4. `04-BibliotecaApiMvcEf6` - API REST de biblioteca con socios, libros, prestamos, devoluciones y Entity Framework 6.
+5. [Reservas de espacios](05-ReservasEspacios/README.md) - API con ASP.NET Core 10, SQLite, autenticación privada, idempotencia y prevención de reservas superpuestas, con pruebas HTTP y de concurrencia.

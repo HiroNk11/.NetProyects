@@ -1,0 +1,40 @@
+name: Reservas de espacios - build and tests
+
+on:
+  push:
+    branches: [main]
+    paths: ["WebApi/05-ReservasEspacios/**", ".github/workflows/reservas-espacios.yml"]
+  pull_request:
+    branches: [main]
+    paths: ["WebApi/05-ReservasEspacios/**", ".github/workflows/reservas-espacios.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: WebApi/05-ReservasEspacios
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Restore
+        run: dotnet restore ReservasEspacios.slnx
+      - name: Build
+        run: dotnet build ReservasEspacios.slnx -c Release --no-restore
+      - name: HTTP integration and concurrency tests
+        run: dotnet test ReservasEspacios.slnx -c Release --no-build --logger trx --results-directory artifacts/tests
+      - name: Publish
+        run: dotnet publish src/Reservas.Api -c Release --no-build -o artifacts/app
+      - name: Test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reservas-test-results
+          path: WebApi/05-ReservasEspacios/artifacts/tests
+          if-no-files-found: warn
