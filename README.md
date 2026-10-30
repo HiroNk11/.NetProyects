@@ -8,6 +8,9 @@ Coleccion de proyectos de prueba en C#, .NET Framework y ASP.NET Core para explo
 
 [API de reservas de espacios](WebApi/05-ReservasEspacios/README.md): servicio con autenticacion privada, reservas sin superposiciones, reintentos idempotentes y cancelaciones. Implementado con ASP.NET Core 10 y SQLite, con contrato OpenAPI y pruebas HTTP de concurrencia.
 
+<details>
+<summary>Ver índice completo de carpetas</summary>
+
 ## Estructura
 
 ```text
@@ -82,6 +85,8 @@ scripts/
 .github/workflows/
   dotnet-framework-build.yml
 ```
+
+</details>
 
 ## Alcance tecnico
 
@@ -207,3 +212,4 @@ Abrir el proyecto correspondiente en Visual Studio y ejecutar con `Ctrl + F5`.
 Para la mesa de ayuda, seguir la [guia de ejecucion con .NET CLI](Web/01-MesaAyuda/README.md#ejecutar-localmente). No requiere Visual Studio ni SQL Server.
 
 Para la API de reservas, seguir la [guia de ejecucion y recorrido HTTP](WebApi/05-ReservasEspacios/README.md#ejecutar). La credencial se configura en privado y no se incluye en el repositorio.
+
