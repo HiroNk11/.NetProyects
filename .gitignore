@@ -20,3 +20,13 @@ secrets.json
 *.p12
 *.key
 *.pem
+
+# Private configuration and generated files
+node_modules/
+dist/
+__pycache__/
+*.pyc
+!.env.*.example
+*.bak
+*.mdf
+*.ldf
